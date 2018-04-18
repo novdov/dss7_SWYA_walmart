@@ -13,7 +13,7 @@ Competition Source: [Kaggle Competition - Walmart Recruiting: Trip Type Classifi
 
 - Subject: Walmart Trip Type Classification
 - Dataset: Walmart
-- Objective: Improving the science behind trip type classification to help Walmart refine their segmentation process.
+- Classification of each customers' TripType based on thier data
 - Evaluation: multi-class logarithmic loss (cross entropy)
 
 ### Data fields
