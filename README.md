@@ -49,6 +49,6 @@ Competition Source: [Kaggle Competition - Walmart Recruiting: Trip Type Classifi
 ### 5. Kaggle Submission
 - Total Teams : 1,047 teams
 - Final Score : 0.79154
-- Leaderboard : 294등 (top 30%)
+- Leaderboard : 294/1,047 (top 30%)
 
 ### 6. Lesson
