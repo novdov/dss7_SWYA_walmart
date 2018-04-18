@@ -13,7 +13,7 @@ Competition Source: [Kaggle Competition - Walmart Recruiting: Trip Type Classifi
 
 - Subject: Walmart Trip Type Classification
 - Dataset: Walmart
-- Classification of each customers' TripType based on thier data
+- Objective: Classification of each customers' TripType based on thier data
 - Evaluation: multi-class logarithmic loss (cross entropy)
 
 ### Data fields
