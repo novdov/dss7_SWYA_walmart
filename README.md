@@ -33,11 +33,22 @@ Competition Source: [Kaggle Competition - Walmart Recruiting: Trip Type Classifi
 ### 1. EDA & Preprocessing
 
 ### 2. Feature Engineering
+- Feauture Engineering
+    - UPC decoding
+    - ScanCount seperation
+    - Feature encoding
+    - Dummy variables
+    - Identifing the most frequently purchased items per VisitNumber
 
 ### 3. Modeling (Random Forest and XGBoost)
+- Random Forest
+- XGBoost
 
 ### 4. Results
 
 ### 5. Kaggle Submission
+- Total Teams : 1,047 teams
+- Final Score : 0.79154
+- Leaderboard : 294등 (top 30%)
 
 ### 6. Lesson
