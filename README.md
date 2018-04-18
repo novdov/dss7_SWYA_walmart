@@ -20,13 +20,13 @@ Competition Source: [Kaggle Competition - Walmart Recruiting: Trip Type Classifi
 
 | Index | Feature               | Description                                  | Unique |
 |-------|-----------------------|----------------------------------------------|--------|
-| 1     | TripType              | Target                                       | 38     |
-| 2     | VisitNumber           | 각 손님의 Index                              | 95674  |
-| 3     | Weekday               | VisitNumber가 발생한 요일                    | 7      |
-| 4     | Upc                   | 구매한 제품의 고유한 바코드                  | 97715  |
-| 5     | ScanCount             | 구매 수량 ( 반품 시 - 값으로 표기 )          | 39     |
-| 6     | DepartmentDescription | 제품의 대분류                                | 69     |
-| 7     | FinelineNumber        | 월마트 자체적으로 정의 한 제품의 소분류 코드 | 5196   |
+| 1     | TripType              | A categorical id representing the type of shopping trip the customer made.                                       | 38     |
+| 2     | VisitNumber           | An id corresponding to a single trip by a single customer                              | 95674  |
+| 3     | Weekday               | The weekday of the trip                    | 7      |
+| 4     | Upc                   | The UPC number of the product purchased                  | 97715  |
+| 5     | ScanCount             | The number of the given item that was purchased. A negative value indicates a product return          | 39     |
+| 6     | DepartmentDescription | A high-level description of the item's department                                | 69     |
+| 7     | FinelineNumber        | A more refined category for each of the products, created by Walmart | 5196   |
 
 ## Contents
 
