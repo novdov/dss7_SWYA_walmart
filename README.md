@@ -1,4 +1,4 @@
-# Walmart Recruiting: Trip Type Classification
+# [Walmart Recruiting: Trip Type Classification](https://github.com/novdov/dss7_SWYA_walmart/blob/master/main/2%ED%8C%80(SWYA)_B_%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C.ipynb)
 
 ## Classification Team Project
 
