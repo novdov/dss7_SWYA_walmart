@@ -40,11 +40,13 @@ Competition Source: [Kaggle Competition - Walmart Recruiting: Trip Type Classifi
     - Dummy variables
     - Identifing the most frequently purchased items per VisitNumber
 
-### 3. Modeling (Random Forest and XGBoost)
-- Random Forest
+### 3. Modeling
 - XGBoost
 
 ### 4. Results
+
+- Log Loss: 0.79154
+- Accuracy: 73.73%
 
 ### 5. Kaggle Submission
 - Total Teams : 1,047 teams
@@ -52,3 +54,13 @@ Competition Source: [Kaggle Competition - Walmart Recruiting: Trip Type Classifi
 - Leaderboard : 294/1,047 (top 30%)
 
 ### 6. Lesson
+
+- EDA & Feature Engineering
+    - MF_FinelineNumber, company외에 중요한 feature 미반영
+    - ScanCount로부터 다양한 수치적 feature (mean, min, max, min-max range)를 시도했으나 성능 향상에 도움이 안 됨
+    - feature를 300~600개 사용했을 때보다 85개에서 가장 높은 성능 (feature 증가 시 다중공선성 의심)
+    - 주어진 feature의 수가 적은 상황에서 효과적인 feature engineering에 대한 공부 필요
+
+
+- Modeling
+    - 효과적인 GridSearch에 대한 아쉬움
