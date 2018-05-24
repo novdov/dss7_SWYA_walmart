@@ -32,10 +32,18 @@ Competition Source: [Kaggle Competition - Walmart Recruiting: Trip Type Classifi
 
 ### 1. EDA & Preprocessing
 
+- Indicate Null data (UPC, DepartmentDescription, FinelineNumber)
+
+- Distribution of Triptype on Weekday
+- Compare most rrequent and least frequent TripTypes
+- Distrubution of DepartmentDescription on TripTypes
+- Find manually intepretable TripType (e.g.) TripType 999: trip for return)
+- Figure out how to handle data (DataFrame) - Pivot table by VisitNumber
+
 ### 2. Feature Engineering
 - Feauture Engineering
     - UPC decoding
-    - ScanCount seperation
+    - ScanCount separation
     - Feature encoding
     - Dummy variables
     - Identifing the most frequently purchased items per VisitNumber
@@ -56,7 +64,7 @@ Competition Source: [Kaggle Competition - Walmart Recruiting: Trip Type Classifi
 ### 6. Lesson
 
 - EDA & Feature Engineering
-    - MF_FinelineNumber, company외에 중요한 feature 미반영
+    - MF_FinelineNumber (Most Frequent FinelineNumber), company외에 중요한 feature 미반영
     - ScanCount로부터 다양한 수치적 feature (mean, min, max, min-max range)를 시도했으나 성능 향상에 도움이 안 됨
     - feature를 300~600개 사용했을 때보다 85개에서 가장 높은 성능 (feature 증가 시 다중공선성 의심)
     - 주어진 feature의 수가 적은 상황에서 효과적인 feature engineering에 대한 공부 필요
