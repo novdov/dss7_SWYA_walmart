@@ -39,6 +39,12 @@ Competition Source: [Kaggle Competition - Walmart Recruiting: Trip Type Classifi
 - Find manually intepretable TripType (e.g.) TripType 999: trip for return)
 - Figure out how to handle data (DataFrame) - Pivot table by VisitNumber
 
+
+
+<img src="https://i.imgur.com/KuSPjth.png" width="600">
+
+
+
 ### 2. Feature Engineering
 - Feauture Engineering
     - UPC decoding
