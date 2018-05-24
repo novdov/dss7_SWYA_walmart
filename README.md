@@ -33,7 +33,6 @@ Competition Source: [Kaggle Competition - Walmart Recruiting: Trip Type Classifi
 ### 1. EDA & Preprocessing
 
 - Indicate Null data (UPC, DepartmentDescription, FinelineNumber)
-
 - Distribution of Triptype on Weekday
 - Compare most rrequent and least frequent TripTypes
 - Distrubution of DepartmentDescription on TripTypes
