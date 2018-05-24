@@ -41,7 +41,7 @@ Competition Source: [Kaggle Competition - Walmart Recruiting: Trip Type Classifi
 
 
 
-<img src="https://i.imgur.com/KuSPjth.png" width="600">
+<img src="https://i.imgur.com/KuSPjth.png" width="750">
 
 
 
