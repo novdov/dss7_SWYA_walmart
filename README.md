@@ -46,18 +46,30 @@ Competition Source: [Kaggle Competition - Walmart Recruiting: Trip Type Classifi
 
 
 ### 2. Feature Engineering
+
 - Feauture Engineering
     - UPC decoding
     - ScanCount separation
     - Feature encoding
-    - Dummy variables
-    - Identifing the most frequently purchased items per VisitNumber
+    - One-hot encoding
+    - Identification of  most frequently purchased items each VisitNumber
 
 ### 3. Modeling
-- XGBoost
+- [XGBoost (eXtreme Gradient Boosting)](https://github.com/dmlc/xgboost)
 
 ### 4. Results
 
+<img src="img/feature_importance.png" width="750">
+
+- Feature importances
+  - Features represent each trip have high importance
+    - MF_FinelineNumber (FinelineNumber most frequently appear each visit)
+    - company code from UPC
+  - Prediction is also affected by counts realted features
+    - ScanCount
+    - CategoryCount
+    - N_Upc
+    - Pos_Sum
 - Log Loss: 0.79154
 - Accuracy: 73.73%
 
@@ -66,14 +78,18 @@ Competition Source: [Kaggle Competition - Walmart Recruiting: Trip Type Classifi
 - Final Score : 0.79154
 - Leaderboard : 294/1,047 (top 30%)
 
-### 6. Lesson
+### 6. Lessons & Limitations
 
 - EDA & Feature Engineering
     - MF_FinelineNumber (Most Frequent FinelineNumber), company외에 중요한 feature 미반영
-    - ScanCount로부터 다양한 수치적 feature (mean, min, max, min-max range)를 시도했으나 성능 향상에 도움이 안 됨
-    - feature를 300~600개 사용했을 때보다 85개에서 가장 높은 성능 (feature 증가 시 다중공선성 의심)
-    - 주어진 feature의 수가 적은 상황에서 효과적인 feature engineering에 대한 공부 필요
+    - Various features from ScanCount (mean, min, max, min-max) didn't have remarkable importance.
+      - Suspecting multicollinearity
+    - Increasing features didn't work well. (Better performance: 85 features than 300-600 features)
+      - e.g.) Better performance: MF_FinelineNumber than top 300 FinelineNumbers
+    - Need to learn how to deal with few features.
 
 
 - Modeling
-    - 효과적인 GridSearch에 대한 아쉬움
+    - Lack of hyperparameter tuning
+      - Sophisticated EDA is required
+
