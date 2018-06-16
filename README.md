@@ -32,12 +32,12 @@ Competition Source: [Kaggle Competition - Walmart Recruiting: Trip Type Classifi
 
 ### 1. EDA & Preprocessing
 
-- Indicate Null data (UPC, DepartmentDescription, FinelineNumber)
-- Distribution of Triptype on Weekday
-- Compare most rrequent and least frequent TripTypes
-- Distrubution of DepartmentDescription on TripTypes
-- Find manually intepretable TripType (e.g.) TripType 999: trip for return)
-- Figure out how to handle data (DataFrame) - Pivot table by VisitNumber
+- Indication of Null data (UPC, DepartmentDescription, FinelineNumber)
+- Distribution of TripType on Weekday
+- Comparison of most frequent and least frequent TripType
+- Distrubution of DepartmentDescription on TripType
+- Manual intepretation of some TripType (e.g.) TripType 999: trip for return)
+- Pivot table by VisitNumber
 
 
 
@@ -47,12 +47,11 @@ Competition Source: [Kaggle Competition - Walmart Recruiting: Trip Type Classifi
 
 ### 2. Feature Engineering
 
-- Feauture Engineering
-    - UPC decoding
-    - ScanCount separation
-    - Feature encoding
-    - One-hot encoding
-    - Identification of  most frequently purchased items each VisitNumber
+- UPC decoding
+- ScanCount separation
+- Feature encoding
+- One-hot encoding
+- Identification of  most frequently purchased items each VisitNumber
 
 ### 3. Modeling
 - [XGBoost (eXtreme Gradient Boosting)](https://github.com/dmlc/xgboost)
@@ -62,27 +61,26 @@ Competition Source: [Kaggle Competition - Walmart Recruiting: Trip Type Classifi
 <img src="img/feature_importance.png" width="750">
 
 - Feature importances
-  - Features represent each trip have high importance
-    - MF_FinelineNumber (FinelineNumber most frequently appear each visit)
+  - Features can distinguish each trip have high importance
+    - FinelineNumber most frequently appear each visit
     - company code from UPC
-  - Prediction is also affected by counts realted features
-    - ScanCount
-    - CategoryCount
-    - N_Upc
-    - Pos_Sum
-- Log Loss: 0.79154
+  - TripType is also affected by counts realted features
+    - ScanCount (The number of items customer purchased)
+    - The number of category
+    - The number of UPC
+    - Pure sum of ScanCount
 - Accuracy: 73.73%
 
 ### 5. Kaggle Submission
 - Total Teams : 1,047 teams
-- Final Score : 0.79154
+- Final Score (Metric: Cross Entropy): 0.79154
 - Leaderboard : 294/1,047 (top 30%)
 
 ### 6. Lessons & Limitations
 
 - EDA & Feature Engineering
-    - MF_FinelineNumber (Most Frequent FinelineNumber), company외에 중요한 feature 미반영
-    - Various features from ScanCount (mean, min, max, min-max) didn't have remarkable importance.
+    - Except MF_FinelineNumber and company, other features can affect model not found.
+    - Various numerical features from ScanCount (mean, min, max, min-max) didn't have remarkable importance.
       - Suspecting multicollinearity
     - Increasing features didn't work well. (Better performance: 85 features than 300-600 features)
       - e.g.) Better performance: MF_FinelineNumber than top 300 FinelineNumbers
@@ -92,4 +90,5 @@ Competition Source: [Kaggle Competition - Walmart Recruiting: Trip Type Classifi
 - Modeling
     - Lack of hyperparameter tuning
       - Sophisticated EDA is required
+    - Not tried ensemble of various models.
 
