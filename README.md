@@ -7,13 +7,12 @@
 Competition Source: [Kaggle Competition - Walmart Recruiting: Trip Type Classification](https://www.kaggle.com/c/walmart-recruiting-trip-type-classification#description)
 
 - Language: Python
-- Classificatoin: scikit-learn, XGBoost
+- Classificatoin: Random Forest (scikit-learn), XGBoost
 
 ### Overview
 
-- Subject: Walmart Trip Type Classification
-- Dataset: Walmart
 - Objective: Classification of each customers' TripType based on thier data
+- Dataset: Walmart
 - Evaluation: multi-class logarithmic loss (cross entropy)
 
 ### Data fields
@@ -49,7 +48,7 @@ Competition Source: [Kaggle Competition - Walmart Recruiting: Trip Type Classifi
 
 - UPC decoding
 - ScanCount separation
-- Feature encoding
+- Numerical values from ScanCount
 - One-hot encoding
 - Identification of  most frequently purchased items each VisitNumber
 
@@ -90,5 +89,4 @@ Competition Source: [Kaggle Competition - Walmart Recruiting: Trip Type Classifi
 - Modeling
     - Lack of hyperparameter tuning
       - Sophisticated EDA is required
-    - Not tried ensemble of various models.
 
